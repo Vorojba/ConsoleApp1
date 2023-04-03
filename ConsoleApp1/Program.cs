@@ -10,12 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите значение параметра x: ");
             string s=Console.ReadLine();
-            double x = double.Parse(s);
+            double x = Convert.ToDouble(s);
             double F = Math.Sin(x)+Math.Cos(x);
-            Console.WriteLine(x+""+F);
+            Console.WriteLine($"Значение F = {F}.");
             Console.ReadKey();
-            return;
         }
     }
 }
